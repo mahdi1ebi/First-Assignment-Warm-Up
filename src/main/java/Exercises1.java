@@ -4,7 +4,11 @@ public class Exercises1 {
      */
     public long factorial(int n) {
         // TODO
-        return 0;
+        int num = 1;
+        for (int i = 2 ; i <= n ; i++){
+            num = num * i;
+        }
+        return num;
     }
 
 
@@ -14,7 +18,15 @@ public class Exercises1 {
     */
     public long fibonacci(int n) {
         // TODO
-        return 0;
+        if (n==1){
+            return 1;
+        }
+        else if (n==2){
+            return 1;
+        }
+        else {
+            return fibonacci(n - 1) + fibonacci(n - 2);
+        }
     }
 
 
@@ -31,6 +43,18 @@ public class Exercises1 {
      */
     public char[][] generateTriangle(int rows) {
         // TODO
+        char[][] arr = new char[rows][rows];
+        for (int i = 0 ; i < rows ; i++){
+            for (int j = 0 ; j <= i ; j++){
+                arr[i][j]='*';
+            }
+        }
+        for (int i = 0 ; i < rows ; i++){
+            for ( int j = 0 ; j <= i ; j++){
+                System.out.print(arr[i][j]);
+            }
+            System.out.println();
+        }
         return null;
     }
 
