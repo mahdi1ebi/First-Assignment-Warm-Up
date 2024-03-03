@@ -36,7 +36,7 @@ public class Exercises1 {
      */
     public char[][] generateTriangle(int rows) {
         // TODO
-        char[][] arr = new char[rows];
+        char[][] arr = new char[rows][];
         for (int i = 1; i <= row; i++) {
             arr[i - 1] = new char[i];
         }
