@@ -1,4 +1,4 @@
-public class Exercises1 {
+public class Exercise1 {
     /*
     implement a function that returns factorial of given n
      */
