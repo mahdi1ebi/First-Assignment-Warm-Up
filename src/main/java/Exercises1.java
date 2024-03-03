@@ -38,7 +38,7 @@ public class Exercises1 {
         // TODO
         char[][] arr = new char[rows];
         for (int i = 1; i <= row; i++) {
-            arr[i - 1] = new char[i][];
+            arr[i - 1] = new char[i];
         }
         for (int i = 0; i < rows ; i++){
             for (int j = 0 ; j <= i ; j++){
