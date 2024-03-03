@@ -3,7 +3,7 @@ public class Exercises1 {
     implement a function that returns factorial of given n
      */
     public long factorial(int n) {
-        // TODO
+        // TODO   
         int num = 1;
         for (int i = 2 ; i <= n ; i++){
             num = num * i;
