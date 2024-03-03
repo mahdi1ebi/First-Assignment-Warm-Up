@@ -18,10 +18,10 @@ public class Exercises1 {
     */
     public long fibonacci(int n) {
         // TODO
-        if (n==1){
-            return 1;
+        if (n==0){
+            return 0;
         }
-        else if (n==2){
+        else if (n==1){
             return 1;
         }
         else {
@@ -49,13 +49,7 @@ public class Exercises1 {
                 arr[i][j]='*';
             }
         }
-        for (int i = 0 ; i < rows ; i++){
-            for ( int j = 0 ; j <= i ; j++){
-                System.out.print(arr[i][j]);
-            }
-            System.out.println();
-        }
-        return null;
+        return arr;
     }
 
 
