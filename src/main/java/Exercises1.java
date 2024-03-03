@@ -4,7 +4,7 @@ public class Exercises1 {
      */
     public long factorial(int n) {
         // TODO   
-        int num = 1;
+        long num = 1;
         for (int i = 2 ; i <= n ; i++){
             num = num * i;
         }
@@ -18,11 +18,8 @@ public class Exercises1 {
     */
     public long fibonacci(int n) {
         // TODO
-        if (n==0){
-            return 0;
-        }
-        else if (n==1){
-            return 1;
+        if (n==0 || n == 1){
+            return n;
         }
         else {
             return (fibonacci(n - 1) + fibonacci(n - 2));
