@@ -25,7 +25,7 @@ public class Exercises1 {
             return 1;
         }
         else {
-            return fibonacci(n - 1) + fibonacci(n - 2);
+            return (fibonacci(n - 1) + fibonacci(n - 2));
         }
     }
 
@@ -43,7 +43,10 @@ public class Exercises1 {
      */
     public char[][] generateTriangle(int rows) {
         // TODO
-        char[][] arr = new char[rows][rows];
+        char[][] arr = new char[rows];
+        for (int i = 1; i <= row; i++) {
+            arr[i - 1] = new char[i];
+        }
         for (int i = 0 ; i < rows ; i++){
             for (int j = 0 ; j <= i ; j++){
                 arr[i][j]='*';
